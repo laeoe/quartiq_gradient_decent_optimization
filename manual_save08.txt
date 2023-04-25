@@ -1,0 +1,6 @@
+Initial params:  {'n_bar': 0, 'x_s': 2.960335540701895, 'alpha': 1.0001, 'beta': 0.5353734795025014, 'final_time': 6.662919282440898}
+Initial params neg:  0.8070371354306032
+
+
+Initial params:  {'n_bar': 0, 'x_s': 3.551288647573484, 'alpha': 1.0001, 'beta': 1.0001, 'final_time': 7.632982060445682}
+Initial params neg:  1.007190045200063
