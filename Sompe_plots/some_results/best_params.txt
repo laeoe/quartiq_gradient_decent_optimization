@@ -1,7 +1,0 @@
-Parameters with the greatest negativity volume: 
-Negativity volume: 1.007190045200063
-n_bar = 0
-x_s = 3.551288647573484
-alpha = 1.0001
-beta = 1.0001
-final_time = 7.632982060445682
