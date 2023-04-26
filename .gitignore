@@ -1,0 +1,7 @@
+Given_code/*
+Some_plots/*
+__pycache__/*
+.ipynb_checkpoints/*
+*.pyc
+testfile.py
+*.txt
