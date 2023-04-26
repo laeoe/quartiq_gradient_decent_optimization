@@ -74,12 +74,24 @@ def get_negativity_volume(physical_parameters):
 
 physical_parameters = {
     "n_bar" : 0,
-    "x_s" : 10 - 1e-3,
+    "x_s" : np.linspace(0, 4, 20),
     "alpha" : 1,
     "beta" : 0,
     "final_time" : 10
 }
 
+negativities = []
+for xs in physical_parameters["x_s"]:
+    physical_parameters["x_s"] = xs
+    neg = get_negativity_volume(physical_parameters)
+    negativities.append(neg)
+    print("x_s: ", xs, "negativity: ", neg)
 
-print("Negativity volume at t_f: ", get_negativity_volume(physical_parameters))
+
+plt.plot(physical_parameters["x_s"], negativities)
+plt.xlabel(r"$x_s$")
+plt.ylabel(r"$\mathcal{N}$")
+plt.show()
+
+#print("Negativity volume at t_f: ", get_negativity_volume(physical_parameters))
 
