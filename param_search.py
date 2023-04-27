@@ -16,9 +16,9 @@ from function_definitions import number_of_fock_states, set_numerical_par
 # }
 start_physical_parameter_range = {
     "n_bar" : [0],
-    "x_s" : (1, 3),
-    "alpha" : (1e-3, 1),
-    "beta" : (0, 1),
+    "x_s" : (0, 0.02),
+    "alpha" : (1e-3, 2e-3),
+    "beta" : (0, 0.02),
     "final_time" : 10
 }
 
@@ -261,7 +261,7 @@ axs[2].grid()
 max_negativity = max(negativity) 
 arg_max_negativity = negativity.index(max_negativity)
 
-with open("best_params.txt", "w") as f:
+with open("last_best_params.txt", "w") as f:
     f.write("Parameters with the greatest negativity volume: \n")
     f.write("Negativity volume: " + str(max_negativity) + "\n")
     for key in pars[arg_max_negativity]:

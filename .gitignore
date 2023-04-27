@@ -5,3 +5,4 @@ __pycache__/*
 *.pyc
 testfile.py
 *.txt
+.DS_Store
